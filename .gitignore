@@ -1,0 +1,71 @@
+```
+# Compiled and build artifacts
+*.obj
+*.exe
+*.dll
+*.so
+*.a
+*.lib
+*.pdb
+*.ilk
+*.exp
+*.o
+*.out
+
+# Build directories
+Binaries/
+Build/
+Saved/
+Intermediate/
+
+# UE4/UE5 specific
+*.target
+*.Build.cs
+*.sln
+*.vcxproj*
+*.rc
+*.res
+*.aps
+*.plg
+
+# Dependencies
+node_modules/
+vendor/
+
+# Logs and temp files
+*.log
+*.tmp
+*.temp
+*.cache
+
+# Environment
+.env
+.env.local
+.env.*
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Coverage reports
+coverage/
+htmlcov/
+.coverage
+
+# Python specific
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg-info/
+.eggs/
+```
