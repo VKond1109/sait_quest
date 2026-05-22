@@ -2,12 +2,17 @@
 	"FileVersion": 3,
 	"EngineAssociation": "5.3",
 	"Category": "",
-	"Description": "Полноценная игра на Unreal Engine 5 с джойстиком, мультиплеером, боевой системой, инвентарем, квестами, деревом навыков, погодой и разрушаемым окружением.",
+	"Description": "UE5 Ultimate Game - Полноценная игра с виртуальным джойстиком и всеми современными механиками",
 	"Modules": [
 		{
 			"Name": "UE5UltimateGame",
 			"Type": "Runtime",
-			"LoadingPhase": "Default"
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine",
+				"InputCore",
+				"EnhancedInput"
+			]
 		}
 	]
 }

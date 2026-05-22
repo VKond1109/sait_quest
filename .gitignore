@@ -1,77 +1,39 @@
 ```
 # Compiled and build artifacts
+*.o
 *.obj
 *.exe
 *.dll
 *.so
 *.a
-*.lib
-*.pdb
-*.ilk
-*.exp
-*.pch
-*.res
-*.aps
-*.ncb
-*.opt
-*.suo
-*.user
-*.userosscache
-*.sln.docstates
-*.vcxproj.filters
-*.vcproj.filters
-*.opensdf
-*.sdf
-*.ipch
-*.iobj
-*.ipdb
-*.tlog
-*.lastbuildstate
-*.layout.bin
-*.VC.db
-*.VC.VC.opendb
-
-# Build directories
+*.out
+Build/
 Binaries/
 Intermediate/
 Saved/
-DerivedDataCache/
-Index/
-Build/
 
-# UE4/UE5 specific
-*.target
-*.Build.cs
-*.ini
-Config/DefaultEngine.ini
-Config/DefaultGame.ini
-Config/DefaultEditor.ini
+# Dependencies
+node_modules/
+vendor/
 
-# Logs
+# Logs and temp files
 *.log
-Script/Unreal.log
-Script/Editor.log
-Script/UnrealVersionSelector.log
-Script/GitSourceControl.log
+*.tmp
+*.swp
 
-# Editor
+# Environment
+.env
+.env.local
+*.env.*
+
+# Editors
 .vscode/
 .idea/
+*.user
+*.sln.DotSettings
+*.csproj.user
 
 # OS generated files
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
 Thumbs.db
-desktop.ini
-
-# Temp files
-*.tmp
-*.temp
-*.bak
-*.backup
-*.old
 ```
