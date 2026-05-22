@@ -20,11 +20,15 @@ public class UE5JoystickGame : ModuleRules
                         "OnlineSubsystem",
                         "OnlineSubsystemUtils",
                         "Networking",
-                        "Sockets"
+                        "Sockets",
+                        "GameplayTags",
+                        "AIModule",
+                        "Niagara"
                 });
 
                 PrivateDependencyModuleNames.AddRange(new string[] {  
-                        "GameplayTasks"
+                        "GameplayTasks",
+                        "AudioMixer"
                 });
 
                 DynamicallyLoadedModuleNames.AddRange(new string[] { });

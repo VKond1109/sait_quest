@@ -1,40 +1,77 @@
 ```
 # Compiled and build artifacts
 *.obj
-*.log
-*.tmp
-*.swp
-*.swo
+*.exe
+*.dll
+*.so
+*.a
+*.lib
+*.pdb
+*.ilk
+*.exp
+*.pch
+*.res
+*.aps
+*.ncb
+*.opt
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.vcxproj.filters
+*.vcproj.filters
+*.opensdf
+*.sdf
+*.ipch
+*.iobj
+*.ipdb
+*.tlog
+*.lastbuildstate
+*.layout.bin
+*.VC.db
+*.VC.VC.opendb
 
-# Dependencies
-node_modules/
-.venv/
-venv/
-__pycache__/
-*.egg-info/
-build/
-dist/
-target/
-
-# Environment
-.env
-.env.local
-*.env.*
-
-# Editors
-.vscode/
-.idea/
-*.swp
-*.swo
+# Build directories
+Binaries/
+Intermediate/
+Saved/
+DerivedDataCache/
+Index/
+Build/
 
 # UE4/UE5 specific
-Binaries/
-Build/
-Saved/
-Intermediate/
-*. uproject
-*.uplugin
-*.uasset
-*.umap
+*.target
+*.Build.cs
 *.ini
+Config/DefaultEngine.ini
+Config/DefaultGame.ini
+Config/DefaultEditor.ini
+
+# Logs
+*.log
+Script/Unreal.log
+Script/Editor.log
+Script/UnrealVersionSelector.log
+Script/GitSourceControl.log
+
+# Editor
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Temp files
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
 ```
