@@ -1,25 +1,53 @@
 ```
 # Compiled and build artifacts
-*.o
 *.obj
 *.exe
 *.dll
 *.so
 *.a
-*.out
-Build/
+*.lib
+*.pdb
+*.ilk
+*.exp
+*.iobj
+*.ipdb
+*.build
 Binaries/
-Intermediate/
+Build/
 Saved/
+Intermediate/
+DerivedDataCache/
+*.target
+*.Target
+*.uplugin
+*.uproject
+*.vcxproj*
+*.sln
+*.suo
+*.user
+*.userosscache
+*.sdf
+*.opensdf
+*.opendb
+*.VC.db
+*.VC.VC.opendb
+Debug/
+Release/
+x64/
+Win64/
 
 # Dependencies
 node_modules/
 vendor/
+libs/
 
 # Logs and temp files
 *.log
 *.tmp
-*.swp
+*.temp
+*.cache
+*.bak
+*.backup
 
 # Environment
 .env
@@ -29,11 +57,26 @@ vendor/
 # Editors
 .vscode/
 .idea/
-*.user
-*.sln.DotSettings
-*.csproj.user
-
-# OS generated files
+*.swp
+*.swo
+*~
 .DS_Store
 Thumbs.db
+
+# UE4/UE5 specific
+Config/DefaultEditor.ini
+Config/DefaultEngine.ini
+Config/DefaultGame.ini
+Content/Packed/
+Plugins/*/Binaries/
+Plugins/*/Intermediate/
+*/Binaries/
+*/Intermediate/
+*.dir-locals.el
+.vs/
+[._]*.sln
+[._]Build/
+[._]Binaries/
+[._]Saved/
+[._]Intermediate/
 ```

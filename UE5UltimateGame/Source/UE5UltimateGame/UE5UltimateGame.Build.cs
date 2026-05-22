@@ -20,10 +20,7 @@ public class UE5UltimateGame : ModuleRules
             "GameplayTasks",
             "OnlineSubsystem",
             "OnlineSubsystemUtils",
-            "OnlineSubsystemSteam" // Для мультиплеера через Steam
-        });
-
-        PrivateDependencyModuleNames.AddRange(new string[] { 
+            "OnlineSubsystemSteam", // Для мультиплеера через Steam
             "Niagara", // VFX
             "Chaos",   // Физика разрушений
             "ChaosVehicles" // Транспорт (опционально)
