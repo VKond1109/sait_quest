@@ -1,0 +1,74 @@
+// Virtual Joystick Widget Blueprint
+// This is a placeholder for the UMG Widget that will display the virtual joystick
+
+// To create the actual widget in Unreal Engine 5:
+// 1. Right-click in Content Browser -> User Interface -> Widget Blueprint
+// 2. Name it "WBP_VirtualJoystick"
+// 3. Add a Canvas Panel as root
+// 4. Add two Image widgets: one for joystick background, one for joystick knob
+// 5. Add the following logic:
+
+/*
+Event Graph Logic:
+
+Variables:
+- JoystickCenter (Vector2D)
+- MaxRadius (float) = 100.0
+- AxisValue (Vector2D)
+- bIsPressed (bool)
+
+Functions:
+- SetupJoystick()
+  - Get viewport size
+  - Set joystick position to bottom-left or bottom-right corner
+  - For mobile: position based on first touch
+  - For desktop: fixed position
+
+- OnTouchStarted (TouchPosition: Vector2D)
+  - Set JoystickCenter = TouchPosition
+  - Set bIsPressed = true
+  - Call VirtualJoystickComponent->OnTouchStarted(TouchPosition)
+
+- OnTouchMoved (TouchPosition: Vector2D)
+  - Calculate Delta = TouchPosition - JoystickCenter
+  - Clamp Delta length to MaxRadius
+  - Update knob position = JoystickCenter + Delta
+  - Normalize AxisValue = Delta / MaxRadius
+  - Call VirtualJoystickComponent->OnTouchMoved(TouchPosition)
+
+- OnTouchEnded()
+  - Reset knob position to JoystickCenter
+  - Set AxisValue = (0, 0)
+  - Set bIsPressed = false
+  - Call VirtualJoystickComponent->OnTouchEnded()
+
+Tick Event:
+- If bIsPressed and using keyboard fallback:
+  - Read WASD/Arrow keys or gamepad stick
+  - Update knob visual position based on input
+  - Update AxisValue accordingly
+*/
+
+// Input Actions (to be created in Project Settings -> Input):
+/*
+Action Mappings:
+- Jump (Space / Gamepad Face Button Bottom)
+- Sprint (Left Shift / Gamepad Left Trigger)
+
+Axis Mappings:
+- MoveForward (W/S or Up/Down arrows)
+- MoveRight (A/D or Left/Right arrows)
+- LookUp (Mouse Y / Gamepad Right Stick Y)
+- LookRight (Mouse X / Gamepad Right Stick X)
+*/
+
+// Enhanced Input Setup:
+/*
+Create Input Mapping Context "IMC_Default":
+- Map Jump Action to Space and Gamepad Face Button Bottom
+- Map Sprint Action to Left Shift and Gamepad Left Trigger
+- Map Move Action to WASD and Gamepad Left Stick
+- Map Look Action to Mouse and Gamepad Right Stick
+
+Create Player Input Component and bind actions in Character class
+*/

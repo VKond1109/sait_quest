@@ -1,0 +1,46 @@
+```
+# Compiled and build artifacts
+*.obj
+*.exe
+*.dll
+*.so
+*.a
+*.lib
+*.pdb
+*.ilk
+*.exp
+*.iobj
+*.ipdb
+*.build
+Binaries/
+Intermediate/
+Saved/
+
+# Dependencies
+*.uplugin
+*.uproject
+Config/
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Environment
+.env
+.env.local
+*.env.*
+
+# Editors
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build outputs
+Build/
+-DerivedData/
+```

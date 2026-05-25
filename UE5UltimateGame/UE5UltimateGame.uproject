@@ -1,0 +1,18 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "5.3",
+	"Category": "",
+	"Description": "UE5 Ultimate Game - Полноценная игра с виртуальным джойстиком и всеми современными механиками",
+	"Modules": [
+		{
+			"Name": "UE5UltimateGame",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine",
+				"InputCore",
+				"EnhancedInput"
+			]
+		}
+	]
+}

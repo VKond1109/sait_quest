@@ -1,0 +1,66 @@
+// Main Level Blueprint Instructions
+// This file describes how to set up the main level for the UE5 Joystick Game
+
+/*
+Level Setup Instructions:
+
+1. Create a new Level:
+   - File -> New Level -> Default
+   - Save as "MainLevel" in Content/Blueprints folder
+
+2. Add Basic Geometry:
+   - Add a Plane or Grid as floor (Scale: 100x100)
+   - Add some cubes/cylinders as obstacles for testing movement
+   - Add lighting (Directional Light, Sky Atmosphere, Sky Light)
+   - Add Post Process Volume for visual enhancement
+
+3. Set up Player Start:
+   - Drag "Player Start" actor into the level
+   - Position it above the floor
+
+4. Configure Game Mode:
+   - In World Settings -> GameMode Override
+   - Set GameMode Class to "JoystickGameMode"
+   - This will automatically spawn AJoystickPlayerCharacter
+
+5. Add Virtual Joystick UI:
+   - Create Widget Blueprint "WBP_VirtualJoystick" (see BP_VirtualJoystick_Instructions.txt)
+   - In Level Blueprint or Game Instance:
+     * Event BeginPlay -> Create WBP_VirtualJoystick
+     * Add to Viewport
+     * Get reference to player character's VirtualJoystickComponent
+     * Wire up touch events from widget to component
+
+6. Testing:
+   - Press Play in Editor
+   - On mobile: touch and drag anywhere to use virtual joystick
+   - On desktop: use WASD for movement, mouse for camera, Space to jump, Shift to sprint
+   - Verify character moves smoothly with joystick input
+
+7. Optional Enhancements:
+   - Add collectibles or objectives
+   - Add enemy AI that follows the player
+   - Add jumping platforms
+   - Add sprint mechanic with stamina system
+   - Add crouch/prone mechanics
+*/
+
+// Level Blueprint Example (pseudo-code):
+/*
+Event BeginPlay:
+  -> Create Widget (WBP_VirtualJoystick)
+  -> Add to Viewport
+  -> Get Player Character (index 0)
+  -> Cast to AJoystickPlayerCharacter
+  -> Get VirtualJoystick component
+  -> Set widget's VirtualJoystick reference
+
+Event Tick:
+  -> Update widget joystick knob position based on VirtualJoystick->AxisValue
+*/
+
+// Recommended Level Settings:
+// - World Gravity Z: -980.0 (default)
+// - bEnableWorldBoundsChecks: True
+// - Time of Day: 12.0 (noon)
+// - Min Desired Frame Rate: 30 (for mobile)
