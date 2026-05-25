@@ -13,41 +13,19 @@
 *.ipdb
 *.build
 Binaries/
-Build/
-Saved/
 Intermediate/
-DerivedDataCache/
-*.target
-*.Target
-*.uplugin
-*.uproject
-*.vcxproj*
-*.sln
-*.suo
-*.user
-*.userosscache
-*.sdf
-*.opensdf
-*.opendb
-*.VC.db
-*.VC.VC.opendb
-Debug/
-Release/
-x64/
-Win64/
+Saved/
 
 # Dependencies
-node_modules/
-vendor/
-libs/
+*.uplugin
+*.uproject
+Config/
 
 # Logs and temp files
 *.log
 *.tmp
-*.temp
-*.cache
-*.bak
-*.backup
+*.swp
+*.swo
 
 # Environment
 .env
@@ -57,26 +35,12 @@ libs/
 # Editors
 .vscode/
 .idea/
-*.swp
-*.swo
-*~
-.DS_Store
-Thumbs.db
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
 
-# UE4/UE5 specific
-Config/DefaultEditor.ini
-Config/DefaultEngine.ini
-Config/DefaultGame.ini
-Content/Packed/
-Plugins/*/Binaries/
-Plugins/*/Intermediate/
-*/Binaries/
-*/Intermediate/
-*.dir-locals.el
-.vs/
-[._]*.sln
-[._]Build/
-[._]Binaries/
-[._]Saved/
-[._]Intermediate/
+# Build outputs
+Build/
+-DerivedData/
 ```
